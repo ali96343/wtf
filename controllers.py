@@ -123,7 +123,8 @@ def skipakke():
 @action.uses(db, session, auth, "register.html")
 def register(id=None):
 
-    
+   
+ 
     form = RegistrationForm(request.POST)
         
     if id !=None:
