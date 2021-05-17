@@ -1,0 +1,19 @@
+[[extend 'layout.html']]
+
+<a role="button" href="[[=URL(  'index'  )]]">goto index</a>
+
+
+<div class="section">
+  <div class="vars">
+      
+  <form method="POST">      
+[[=form.email.label]]
+[[=form.email]]
+[[=form.name.label]]
+[[=form.name]]
+[[=form.submit]]
+  </form>    
+
+      
+  </div>
+</div>

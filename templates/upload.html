@@ -1,0 +1,19 @@
+[[extend "layout.html"]]
+
+<a role="button" href="[[=URL(  'index'  )]]">goto index</a>
+
+
+<div class="section">
+  <div class="vars">
+      
+<img class="rounded-circle account-img" src="[[=downloadurl]][[=fileimg.file]]">
+      
+  <form method="POST" enctype='multipart/form-data'>      
+[[=form.image]]
+[[=form.description]]
+[[=form.submit]]
+  </form>    
+
+      
+  </div>
+</div>
