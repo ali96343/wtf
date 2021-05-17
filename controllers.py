@@ -123,9 +123,6 @@ def skipakke():
 @action.uses(db, session, auth, "register.html")
 def register(id=None):
 
-    user = auth.get_user()
-    if user is None:
-        redirect(URL('index'))
     
     form = RegistrationForm(request.POST)
         
